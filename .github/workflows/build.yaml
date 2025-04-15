@@ -1,0 +1,25 @@
+name: Build application
+
+on: 
+  push:
+  workflow_dispatch:
+
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+  steps:
+      - name: Build start
+        script: echo "Build Starting Now"
+
+      - name: Checkout code
+        uses: actions/checkout@v3
+      
+      - name: Build end
+        script: echo "Build ends Now"
+      
+      - name: Test Start
+        script: echo "Testing begining now"
+
+      - name: Tests end
+        script: echo "Testing ends Now"
